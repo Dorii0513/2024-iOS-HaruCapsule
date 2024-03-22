@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TabbedItems: Int, CaseIterable{
+enum MainTabbedItems: Int, CaseIterable{
     case map = 0
     case add
     case stack
