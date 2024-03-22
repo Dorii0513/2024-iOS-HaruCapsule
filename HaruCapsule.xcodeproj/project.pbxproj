@@ -13,6 +13,8 @@
 		B3DD57652BAD1E4E00E671A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD57642BAD1E4E00E671A4 /* Preview Assets.xcassets */; };
 		B3DD576C2BAD341300E671A4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD576B2BAD341300E671A4 /* MapView.swift */; };
 		B3DD576F2BAD4CDA00E671A4 /* MainTabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD576E2BAD4CDA00E671A4 /* MainTabbedItems.swift */; };
+		B3DD57722BAD67A700E671A4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD57712BAD67A700E671A4 /* AddView.swift */; };
+		B3DD57742BAD67CC00E671A4 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD57732BAD67CC00E671A4 /* SaveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B3DD57642BAD1E4E00E671A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3DD576B2BAD341300E671A4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B3DD576E2BAD4CDA00E671A4 /* MainTabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedItems.swift; sourceTree = "<group>"; };
+		B3DD57712BAD67A700E671A4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		B3DD57732BAD67CC00E671A4 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				B3DD576B2BAD341300E671A4 /* MapView.swift */,
 				B3DD575E2BAD1E4D00E671A4 /* MainTapView.swift */,
+				B3DD57732BAD67CC00E671A4 /* SaveView.swift */,
+				B3DD57712BAD67A700E671A4 /* AddView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,8 +169,10 @@
 			files = (
 				B3DD576F2BAD4CDA00E671A4 /* MainTabbedItems.swift in Sources */,
 				B3DD575F2BAD1E4D00E671A4 /* MainTapView.swift in Sources */,
+				B3DD57722BAD67A700E671A4 /* AddView.swift in Sources */,
 				B3DD576C2BAD341300E671A4 /* MapView.swift in Sources */,
 				B3DD575D2BAD1E4D00E671A4 /* HaruCapsuleApp.swift in Sources */,
+				B3DD57742BAD67CC00E671A4 /* SaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

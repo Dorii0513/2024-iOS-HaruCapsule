@@ -10,7 +10,7 @@ import Foundation
 enum MainTabbedItems: Int, CaseIterable{
     case map = 0
     case add
-    case stack
+    case save
     
     var title: String{
         switch self{
@@ -18,7 +18,7 @@ enum MainTabbedItems: Int, CaseIterable{
             return "map"
         case .add:
             return "add"
-        case .stack:
+        case .save:
             return "stack"
         }
     }
@@ -29,7 +29,7 @@ enum MainTabbedItems: Int, CaseIterable{
             return "map_fill"
         case .add:
             return "add"
-        case .stack:
+        case .save:
             return "stack_unfill"
         }
     }

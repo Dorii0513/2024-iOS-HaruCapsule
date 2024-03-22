@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct MainTapView: View {
+    
+    @State var selectedTab = 0
+    
     var body: some View {
-        Text("Hello")
+        ZStack(alignment: .bottom){
+            MapView()
+                .tag(0)
+            
+            AddView()
+                .tag(1)
+            
+            SaveView()
+                .tag(2)
+            
+        }
     }
 }
 
