@@ -12,6 +12,7 @@
 		B3DD57612BAD1E4E00E671A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD57602BAD1E4E00E671A4 /* Assets.xcassets */; };
 		B3DD57652BAD1E4E00E671A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD57642BAD1E4E00E671A4 /* Preview Assets.xcassets */; };
 		B3DD576C2BAD341300E671A4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD576B2BAD341300E671A4 /* MapView.swift */; };
+		B3DD576F2BAD4CDA00E671A4 /* TabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD576E2BAD4CDA00E671A4 /* TabbedItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B3DD57622BAD1E4E00E671A4 /* HaruCapsule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HaruCapsule.entitlements; sourceTree = "<group>"; };
 		B3DD57642BAD1E4E00E671A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3DD576B2BAD341300E671A4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B3DD576E2BAD4CDA00E671A4 /* TabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B3DD575C2BAD1E4D00E671A4 /* HaruCapsuleApp.swift */,
+				B3DD57702BAD4D9A00E671A4 /* DataSource */,
 				B3DD576D2BAD341B00E671A4 /* View */,
 				B3DD57602BAD1E4E00E671A4 /* Assets.xcassets */,
 				B3DD57622BAD1E4E00E671A4 /* HaruCapsule.entitlements */,
@@ -78,6 +81,14 @@
 				B3DD575E2BAD1E4D00E671A4 /* MainTapView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B3DD57702BAD4D9A00E671A4 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD576E2BAD4CDA00E671A4 /* TabbedItems.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DD576F2BAD4CDA00E671A4 /* TabbedItems.swift in Sources */,
 				B3DD575F2BAD1E4D00E671A4 /* MainTapView.swift in Sources */,
 				B3DD576C2BAD341300E671A4 /* MapView.swift in Sources */,
 				B3DD575D2BAD1E4D00E671A4 /* HaruCapsuleApp.swift in Sources */,
