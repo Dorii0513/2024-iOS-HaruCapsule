@@ -12,25 +12,14 @@ enum MainTabbedItems: Int, CaseIterable{
     case add
     case save
     
-    var title: String{
+    var iconName: String{
         switch self{
         case .map:
             return "map"
         case .add:
             return "add"
         case .save:
-            return "stack"
-        }
-    }
-    
-    var iconName: String{
-        switch self{
-        case .map:
-            return "map_fill"
-        case .add:
-            return "add"
-        case .save:
-            return "stack_unfill"
+            return "save"
         }
     }
 }

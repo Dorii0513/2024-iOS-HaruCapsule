@@ -12,20 +12,44 @@ struct MainTapView: View {
     @State var selectedTab = 0
     
     var body: some View {
-        ZStack(alignment: .bottom){
-            MapView()
-                .tag(0)
+        VStack{
+            ZStack{
+                
+            }
+            Spacer()
             
-            AddView()
-                .tag(1)
+            ZStack(alignment: .center){
+                Rectangle()
+                    .cornerRadius(30)
+                    .ignoresSafeArea()
+                    .frame(width: 415, height: 100)
+                    .foregroundColor(.tapBar)
+                    
             
-            SaveView()
-                .tag(2)
-            
+                HStack{
+                    ForEach(0..<3, id: \.self) { number in
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "house")
+                                .font(.system(size: 28
+                                              , weight: .regular, design: .default))
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 28)
+                        })
+                        
+                    }
+                    
+                }
+            }.frame(alignment: .bottom)
         }
     }
 }
 
-#Preview {
-    MainTapView()
+struct MainTapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainTapView()
+    }
 }
+
