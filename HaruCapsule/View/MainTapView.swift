@@ -11,9 +11,30 @@ struct MainTapView: View {
     
     @State var selectedTab = 0
     
+    let Icons = [
+        "map",
+        "add",
+        "save"
+    ]
+    
     var body: some View {
         VStack{
             ZStack{
+                switch selectedTab{
+                case 0:
+                    NavigationView{
+                            MapView()
+                    }
+                case 1:
+                    NavigationView{
+                            AddView()
+                    }
+                default:
+                    NavigationView{
+                           SaveView()
+                    }
+                
+                }
                 
             }
             Spacer()
@@ -22,7 +43,7 @@ struct MainTapView: View {
                 Rectangle()
                     .cornerRadius(30)
                     .ignoresSafeArea()
-                    .frame(width: 415, height: 100)
+                    .frame(width: 412, height: 90)
                     .foregroundColor(.tapBar)
                     
             
@@ -30,13 +51,13 @@ struct MainTapView: View {
                     ForEach(0..<3, id: \.self) { number in
                         
                         Button(action: {
-                            
+                            self.selectedTab = number
                         }, label: {
-                            Image(systemName: "house")
+                            Image(selectedTab == number ? Icons[number] + ".fill" : Icons[number] + ".unfill")
                                 .font(.system(size: 28
                                               , weight: .regular, design: .default))
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 28)
+                                .padding(.horizontal, 35)
+                            
                         })
                         
                     }
