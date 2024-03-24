@@ -17,53 +17,63 @@ struct MainTapView: View {
         "save"
     ]
     
+    @State var tag: Int? = nil
+    
     var body: some View {
-        VStack{
-            ZStack{
-                switch selectedTab{
-                case 0:
-                    NavigationView{
-                            MapView()
-                    }
-                case 1:
-                    NavigationView{
-                            AddView()
-                    }
-                default:
-                    NavigationView{
-                           SaveView()
-                    }
+        NavigationView {
+            VStack{
                 
-                }
-                
-            }
-            Spacer()
-            
-            ZStack(alignment: .center){
-                Rectangle()
-                    .cornerRadius(30)
-                    .ignoresSafeArea()
-                    .frame(width: 412, height: 90)
-                    .foregroundColor(.tapBar)
+//                ZStack {
+//                    NavigationLink(destination: AddView(), tag: 1, selection: self.$tag) {
+//                        EmptyView()
+//                    }
+               
+                ZStack{
+                    switch selectedTab{
+                    case 0:
+                        MapView()
+                    case 1:
+                        AddView()
+                    default:
+                        SaveView()
+                    }
                     
-            
-                HStack{
-                    ForEach(0..<3, id: \.self) { number in
-                        
-                        Button(action: {
-                            self.selectedTab = number
-                        }, label: {
-                            Image(selectedTab == number ? Icons[number] + ".fill" : Icons[number] + ".unfill")
-                                .font(.system(size: 28
-                                              , weight: .regular, design: .default))
-                                .padding(.horizontal, 35)
+                    NavigationLink(destination: AddView(), tag: 1, selection: self.$tag) {
+                        EmptyView()
+                    }
+                    
+                }.frame(width: .infinity, height: 700)
+                Spacer()
+                
+                ZStack(alignment: .center){
+                    Rectangle()
+                        .cornerRadius(30)
+                        .ignoresSafeArea()
+                        .frame(width: 412, height: 90)
+                        .foregroundColor(.tapBar)
+                    
+                    HStack{
+                        ForEach(0..<3, id: \.self) { number in
                             
-                        })
+                            Button(action: {
+                                if number != 1 {
+                                    self.selectedTab = number
+                                } else if number == 1 {
+                                    self.tag = 1
+                                }
+                            }, label: {
+                                Image(selectedTab == number ? Icons[number] + ".fill" : Icons[number] + ".unfill")
+                                    .font(.system(size: 28
+                                                  , weight: .regular, design: .default))
+                                    .padding(.horizontal, 35)
+                                
+                            })
+                            
+                        }
                         
                     }
-                    
-                }
-            }.frame(alignment: .bottom)
+                }.frame(alignment: .bottom)
+            }
         }
     }
 }
