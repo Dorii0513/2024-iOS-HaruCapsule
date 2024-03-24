@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct HaruCapsuleApp: App {
+    @UIApplicationDelegateAdaptor var delegate: MyAppDelegate
     var body: some Scene {
         WindowGroup {
             MainTapView()

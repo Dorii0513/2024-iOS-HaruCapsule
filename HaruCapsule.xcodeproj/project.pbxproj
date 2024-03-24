@@ -15,6 +15,7 @@
 		B3DD576F2BAD4CDA00E671A4 /* MainTabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD576E2BAD4CDA00E671A4 /* MainTabbedItems.swift */; };
 		B3DD57722BAD67A700E671A4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD57712BAD67A700E671A4 /* AddView.swift */; };
 		B3DD57742BAD67CC00E671A4 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD57732BAD67CC00E671A4 /* SaveView.swift */; };
+		B3DD57772BB00E0B00E671A4 /* MyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD57762BB00E0B00E671A4 /* MyAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		B3DD576E2BAD4CDA00E671A4 /* MainTabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedItems.swift; sourceTree = "<group>"; };
 		B3DD57712BAD67A700E671A4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		B3DD57732BAD67CC00E671A4 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
+		B3DD57752BB00AC400E671A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B3DD57762BB00E0B00E671A4 /* MyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 		B3DD57502BAD1E4D00E671A4 = {
 			isa = PBXGroup;
 			children = (
+				B3DD57762BB00E0B00E671A4 /* MyAppDelegate.swift */,
 				B3DD575B2BAD1E4D00E671A4 /* HaruCapsule */,
 				B3DD575A2BAD1E4D00E671A4 /* Products */,
 			);
@@ -60,6 +64,7 @@
 		B3DD575B2BAD1E4D00E671A4 /* HaruCapsule */ = {
 			isa = PBXGroup;
 			children = (
+				B3DD57752BB00AC400E671A4 /* Info.plist */,
 				B3DD575C2BAD1E4D00E671A4 /* HaruCapsuleApp.swift */,
 				B3DD57702BAD4D9A00E671A4 /* DataSource */,
 				B3DD576D2BAD341B00E671A4 /* View */,
@@ -170,6 +175,7 @@
 				B3DD576F2BAD4CDA00E671A4 /* MainTabbedItems.swift in Sources */,
 				B3DD575F2BAD1E4D00E671A4 /* MainTapView.swift in Sources */,
 				B3DD57722BAD67A700E671A4 /* AddView.swift in Sources */,
+				B3DD57772BB00E0B00E671A4 /* MyAppDelegate.swift in Sources */,
 				B3DD576C2BAD341300E671A4 /* MapView.swift in Sources */,
 				B3DD575D2BAD1E4D00E671A4 /* HaruCapsuleApp.swift in Sources */,
 				B3DD57742BAD67CC00E671A4 /* SaveView.swift in Sources */,
@@ -306,6 +312,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HaruCapsule/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -344,6 +351,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HaruCapsule/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
